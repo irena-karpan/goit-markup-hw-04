@@ -122,10 +122,19 @@ button {
 }
 
 /* HERO */
+
 .hero-section {
-  background: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #2e2f42;
+  background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(/images/herobackgr.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
 }
 .hero-title {
   font-weight: 700;
@@ -186,6 +195,16 @@ button {
   color: #434455;
 }
 
+.features-icon-wrap {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  background-color: #f4f4fd;
+  margin-bottom: 8px;
+}
+.features-icon {
+  display: block;
+  margin: 24px 100px;
+}
 /* TEAM */
 
 .team-title {
@@ -224,6 +243,7 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  margin-bottom: 8px;
 }
 .team-list-item {
   box-shadow:
@@ -234,6 +254,22 @@ button {
   flex-basis: calc((100% - 24px * 3) / 4);
   border-radius: 0 0 4px 4px;
 }
+.team-icon-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.team-icon-item {
+  background-color: #4d5ae5;
+  padding: 12px;
+  border-radius: 50%;
+}
+.team-icon {
+  fill: #f4f4fd;
+  display: block;
+}
+
 /* POTFOLIO */
 .portf-list-item-container {
   text-align: left;
@@ -311,7 +347,35 @@ button {
   color: #f4f4fd;
   max-width: 264px;
 }
+
+.footer-cos-descr {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.footer-icon-list {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.footer-icon-item {
+  background-color: #4d5ae5;
+  padding: 8px;
+  border-radius: 50%;
+}
+.footer-icon {
+  fill: #f4f4fd;
+  display: block;
+}
+
 .footer-container {
+  display: flex;
+  gap: 120px;
+}
+.footer-column-wrap {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
