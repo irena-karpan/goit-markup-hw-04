@@ -139,7 +139,6 @@ button {
 }
 
 .link-prompt::after {
-  color: #404bbf;
   position: absolute;
   bottom: -1px;
   /* left: 50%;
@@ -150,6 +149,9 @@ button {
   height: 4px;
   width: 100%;
   background-color: #404bbf;
+}
+.link-prompt {
+  color: #404bbf;
 }
 
 /* HERO */
@@ -477,13 +479,13 @@ button {
 .footer-container {
   display: flex;
   gap: 120px;
+  align-items: baseline;
 }
 .footer-column-wrap {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
-  justify-content: baseline;
-  align-items: baseline;
+  align-items: start;
 }
 /* container обгортка для тільки для контенту*/
 .container {
