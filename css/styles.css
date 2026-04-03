@@ -86,6 +86,10 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-logo-span:hover,
 .header-logo-span:focus {
@@ -99,6 +103,10 @@ button {
   color: #2e2f42;
   display: block;
   padding: 24px 0;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav-list-link:hover,
 .header-nav-list-link:focus {
@@ -115,6 +123,10 @@ button {
   color: #434455;
   display: block;
   padding: 24px 0;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-list-item:hover,
 .address-list-item:focus {
@@ -123,7 +135,9 @@ button {
 
 .link-prompt::after {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
+  /* left: 50%;
+  transform: translateX(-50%); */
   left: 0;
   content: "";
   border-radius: 2px;
@@ -131,10 +145,10 @@ button {
   width: 100%;
   background-color: #404bbf;
 }
-.header-nav-list-link {
+
+.header-nav-item {
   position: relative;
 }
-
 /* HERO */
 
 .hero-section {
@@ -174,6 +188,10 @@ button {
   padding: 16px 32px;
   border: none;
   min-width: 169px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-butn:hover,
 .hero-butn:focus {
@@ -217,7 +235,7 @@ button {
 }
 .features-icon {
   display: block;
-  margin: 24px 100px;
+  margin: 24px auto;
 }
 /* TEAM */
 
@@ -278,10 +296,18 @@ button {
   background-color: #4d5ae5;
   padding: 12px;
   border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-icon {
   fill: #f4f4fd;
   display: block;
+}
+.team-icon-item:hover,
+.team-icon-item:focus {
+  background-color: #404bbf;
 }
 
 /* POTFOLIO */
@@ -390,6 +416,10 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-logo-span:hover,
 .footer-logo-span:focus {
@@ -421,10 +451,19 @@ button {
   background-color: #4d5ae5;
   padding: 8px;
   border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon {
   fill: #f4f4fd;
   display: block;
+}
+
+.footer-icon-item:hover,
+.footer-icon-item:focus {
+  background-color: #31d0aa;
 }
 
 .footer-container {
